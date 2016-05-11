@@ -1,19 +1,13 @@
 <?php
-$to="s.nechaev@t-stark.ru, quicklybox@gmail.com, a.lugovtsev@t-stark.ru";
-$sender = "export@q-box.ru";
+$to="a.lugovtsev@t-stark.ru";
+$sender = "info@patriotka.ru";
 
-$theme  = "Заявка с Q-Box Export Lp";
+$theme  = "Заявка c сайта Патриотка";
 
 //вторая валидация на сервере
 $regName = "/[^а-яЁё\s]+/ui";
-$regMail = "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/";
 $regPhone = "/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/";
 $flagError = false;
-if (isset($_POST['mail'])) 
-	{
-		$mail  = trim(strip_tags($_POST['mail']));
-		if (!preg_match($regMail, $mail)) $flagError = true;
-	}
 if (isset($_POST['name'])) 
 	{
 		$name  = trim(strip_tags($_POST['name']));
@@ -24,14 +18,7 @@ if (isset($_POST['phone']))
 		$phone = trim(strip_tags($_POST['phone']));
 		if (!preg_match($regPhone, $phone)) $flagError = true;
 	}
-if (isset($_POST['fromwhatpage'])) $fromwhatpage = trim(strip_tags($_POST['fromwhatpage']));
-$country = '';
-if (isset($_POST['country']) && $_POST['country']=='' && isset($_POST['isgeo'])) {
-    $country = 'Россия';
-} elseif (isset($_POST['isgeo'])) {
-    $country = trim(strip_tags($_POST['country']));
-    if (preg_match($regName, $country)) $flagError = true;
-}
+
 
 // если не пройдена валидация - логи, письмо, прекращение выполнения
 if ($flagError) {
