@@ -1,0 +1,16 @@
+@media all and (max-width: 1200px) {
+	.block-form-width,
+	#callback-form,
+	#callback-form input[type=text],
+	textarea {
+		width: 100%;
+	}
+}
+
+/*для позиционирования маркера на карте*/
+@media all and (max-width: 1000px) {
+	section.map {
+		background-position: center;
+		background-image: url(../images/bg-map-center.jpg);
+	}
+}

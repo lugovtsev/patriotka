@@ -8,6 +8,36 @@
 		float: none;
 		margin: 7px auto 25px;
 	}
+
+	section.contacts h2,
+	section.contacts p {
+		text-align: center;
+	}
+
+	section.contacts .social-buttons {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	p.head-info {
+		text-align: center;
+	}
+
+	p.head-info:not(.first-head-info) {
+		margin-top: 20px;
+	}
+
+}
+
+@media all and (max-width: 630px) {
+	.main-coco {
+		width: 100%;
+	}
+
+	h1 {
+		line-height: 1;
+		margin-bottom: 30px;
+	}
 }
 
 @media all and (max-width: 370px) {
@@ -34,5 +64,15 @@
 		text-align: center;
 		margin-left: 0 !important;
 		margin-bottom: 10px;
+	}
+}
+
+@media all and (max-width: 390px) {
+	h1 {
+		font-size: 38px;
+	}
+
+	section.first-screen {
+		padding-top: 80px;
 	}
 }

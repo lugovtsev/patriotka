@@ -9,6 +9,7 @@
 	<title>Патриотка</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/max768.css">
+	<link rel="stylesheet" href="css/max1200.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 </head>
@@ -32,7 +33,87 @@
 </div>
 </header>
 <main>
-	
+	<section class="first-screen">
+		<div class="main-coco animated fadeInDownBig"><img src="images/red/main-screen.png"></div>
+		<h1 class="animated zoomInDown">Невообразимые кокошники</h1>
+		<p class="mini-desc animated zoomIn">Лучшего вы еще не одевали на свою голову</p>
+	</section>
+	<section class="advantages">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<div id="our-advantages">
+						<h2>Наши преимущества</h2>
+						<p>Повседневная практика показывает, что реализация намеченных плановых заданий способствует подготовки и реализации системмассового участия. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает </p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div id="anatom-corpus" class="bgc-transp">
+						<div class="anatom-img">
+							<h2>Анатомический <br> корпус</h2>
+							<img src="images/red/advantage1.png">
+						</div>
+						<div class="overlay overlay-anatom">
+							<h2>Анатомический <br> корпус</h2>
+							<p>Повседневная практика показывает, что реализация намеченных плановых заданий способствует подготовки и реализации системмассового участия. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="info-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<p class="head-info first-head-info">Доставка</p>
+					<p>С другой стороны консультация с широким активом представляет собой интересный эксперимент проверки форм развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры в значительной степени обуславливает создание новых предложений.</p>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<p class="head-info">Оплата</p>
+					<p>С другой стороны консультация с широким активом представляет собой интересный эксперимент проверки форм развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры в значительной степени обуславливает создание новых предложений.</p>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<p class="head-info">Возврат</p>
+					<p>С другой стороны консультация с широким активом представляет собой интересный эксперимент проверки форм развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры в значительной степени обуславливает создание новых предложений.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="map"></section>
+	<section class="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-xs-12 left-contacts">
+					<h2>Контакты</h2>
+					<p>Телефон: +7 (917) 456 88 88,  +7 (917) 456 88 88</p>
+					<p>E-mail: patriotka@gmail.com</p>
+					<p>Адрес: ул. Савушкина, 83, Санкт-Петербург, Россия</p>
+					<div class="social-buttons">
+						<a href=""><div><i class="fa fa-instagram" aria-hidden="true"></i></div></a>
+						<a href=""><div><i class="fa fa-vk" aria-hidden="true"></i></div></a>
+						<a href=""><div><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
+						<a href=""><div><i class="fa fa-odnoklassniki" aria-hidden="true"></i></div></a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12 right-contacts">
+					<div class="block-form-width">
+						<h2>Обратная связь</h2>
+						<form id="callback-form" action="php-script/post.php" method="post">
+							<input type="text" id="name" name="name" placeholder="Имя">
+							<input type="text" id="phone" name="phone" placeholder="Телефон">
+							<textarea name="message" id="message" rows="4" placeholder="Сообщение"></textarea>
+							<input type="button" onclick="SendForm('callback-form');" value="Отправить">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </main>
 <footer>
 	<div class="footer-nav">
