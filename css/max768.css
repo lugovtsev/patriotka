@@ -1,0 +1,25 @@
+@media all and (max-width: 768px) {
+	.logo {
+		margin: 25px auto 7px;
+		width: 165px;
+	}
+
+	nav {
+		float: none;
+		margin: 7px auto 25px;
+	}
+}
+
+@media all and (max-width: 380px) {
+	nav ul li {
+		float: none;
+		text-align: center;
+		margin-left: 0 !important;
+		margin-bottom: 7px;
+	}
+
+	nav {
+		width: 130px;
+		margin-bottom: 15px;
+	}
+}
