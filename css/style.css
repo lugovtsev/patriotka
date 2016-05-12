@@ -1,8 +1,9 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.5;
 	margin: 0;
+	font-weight: 300;
 }
 
 .clearfix {
@@ -36,7 +37,7 @@ a:hover {
 nav {
 	float: right;
 	margin: 30px 0;
-	width: 360px;
+	width: 350px;
 }
 
 nav ul {
@@ -49,16 +50,43 @@ nav ul li {
 }
 
 nav ul li:not(.first-li) {
-	margin-left: 30px;
+	margin-left: 25px;
 }
 
 nav a {
 	color: #7b7b7b;
 	text-decoration: none;
 	font-weight: 300;
+	font-size: 18px;
 }
 
 nav a:hover {
 	text-decoration: none;
 	color: #c71734;
+}
+
+.footer-nav {
+	width: 482px;
+	margin: 31px auto;
+}
+
+.footer-nav a {
+	color: #7b7b7b;
+	text-decoration: none;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.footer-nav a:hover {
+	text-decoration: none;
+	color: #c71734;
+}
+
+.footer-nav a:not(.first-foot-a) {
+	margin-left: 25px;
+}
+
+footer {
+	margin-top: 300px;
+	border-top: 1px solid #efefef;
 }
