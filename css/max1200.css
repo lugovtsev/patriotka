@@ -5,6 +5,10 @@
 	textarea {
 		width: 100%;
 	}
+
+	#our-advantages{
+		height: auto;
+	}
 }
 
 /*для позиционирования маркера на карте*/

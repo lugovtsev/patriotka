@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+var targetElem = $('.advantages .row').eq(1);
+var targetElemPos = targetElem.offset().top;
+$(window).resize(function(){
+  targetElemPos = targetElem.offset().top;
+});
+$(window).scroll(function(){
+  var scrolledAtop = $(this).scrollTop();
+  if(scrolledAtop > targetElemPos){
+    targetElem.addClass('elem-active');
+  }
+});
+
+
 $(function($){
 	   $("#phone").mask("+7-(999)-999-99-99");
 	});
